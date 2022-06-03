@@ -1,0 +1,39 @@
+{
+    "Cliente": [
+        {
+            "id": 1,
+            "nome": "Pedro",
+            "email": "pedro@gmail.com",
+            "fone": "123-4567"
+        },
+        {
+            "id": 2,
+            "nome": "Ana",
+            "email": "ana@gmail.com",
+            "fone": "987-6543"
+        },
+        {
+            "id": 3,
+            "nome": "joao",
+            "email": "joao@gmail.com",
+            "fone": "345-6789"
+        }
+    ],
+    "Produto": [
+        {
+            "id": 1,
+            "nome": "Cerveja",
+            "qtde": 357
+        },
+        {
+            "id": 2,
+            "nome": "Refrigernte",
+            "qtde": 127
+        },
+        {
+            "id": 3,
+            "nome": "Suco",
+            "qtde": 587
+        }
+    ]
+}

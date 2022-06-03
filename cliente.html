@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+</head>
+<style>
+    * {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>Clientes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Fone</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <script>
+        var tabela = document.getElementById("tbody")
+
+        fetch("http://localhost:3000/Cliente")
+            .then(x => x.json()
+                .then(x => {
+                    for (valor of x) {
+                        tabela.innerHTML +=
+                            `<td>${valor.id}</td> 
+                     <td>${valor.nome}</td>
+                     <td>${valor.email}</td>
+                     <td>${valor.fone}</td>`
+                    }
+                    tabela = ""
+                })
+            )
+
+    </script>
+</body>
+
+</html>
