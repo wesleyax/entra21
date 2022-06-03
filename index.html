@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,41 @@
 </head>
 <style>
     .container{
+        
+        width: 50%;
+        margin: auto;
+        background-color: brown;
+        
+    }
+    .divMenu {
+        background-color: blueviolet;
         display: flex;
         justify-content: center;
-        width: 80%;
-        margin: auto;
-        background-color: blueviolet;
     }
-    .btMenu{
+    
+    .btMenu {
         background-color: blueviolet;
         padding: 15px;
         border: none;
         color: white;
+        
     }
-    .btMenu:hover{
+
+    .btMenu:hover {
         background-color: brown;
         cursor: pointer;
+        transform: scale(1.1);
     }
 </style>
+
 <body>
     <div class="container">
-        <button class="btMenu">Botão</button>
-        <button class="btMenu">Botão</button>
-        <button class="btMenu">Botão</button>
-        <button class="btMenu">Botão</button>
+        <div class="divMenu">
+            <button class="btMenu">Consulta Cliente</button>
+            <button class="btMenu">Consulta Produtos</button>
+        </div>
+        <iframe src="" frameborder="0"></iframe>
     </div>
-    
 </body>
+
 </html>
