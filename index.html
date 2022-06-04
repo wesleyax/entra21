@@ -7,32 +7,37 @@
     <title>Document</title>
 </head>
 <style>
-    *{
-        margin: 0px;
-        padding: 0px;
+    body {
+        background: url("../img/bg_01.gif");
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
     }
-    .container{
-        
-        width: 50%;
+
+    .container {
+        width: 800px;
+        height: max-content;
         margin: auto;
         margin-top: 10px;
-        background-color: silver;
-        height: 100%;
-        
+        background:rgba(192, 192, 192, 0.644) ;
+        border-radius: 10px;
     }
+
     .divMenu {
         background-color: rgb(183, 127, 235);
         display: flex;
         justify-content: center;
+        border-radius: 10px;
     }
-    
+
     .btMenu {
         background-color: rgb(183, 127, 235);
         padding: 15px;
         border: none;
         color: white;
-        
     }
 
     .btMenu:hover {
@@ -40,8 +45,10 @@
         cursor: pointer;
         transform: scale(1.1);
     }
-    iframe{
+
+    iframe {
         width: 100%;
+        min-height: 800px;
     }
 </style>
 
@@ -50,10 +57,9 @@
         <div class="divMenu">
             <a href="./cliente.html" target="centro"><button class="btMenu">Consulta Cliente</button></a>
             <a href="./produto.html" target="centro"><button class="btMenu">Consulta Produtos</button></a>
-           
+
         </div>
         <iframe src="./cliente.html" frameborder="0" name="centro"></iframe>
-        
     </div>
 </body>
 
